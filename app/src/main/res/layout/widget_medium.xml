@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_medium_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_widget_med_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="زرواچ • ارزش کل پرتفوی"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_widget_med_refresh"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_popup_sync"
+            android:contentDescription="بروزرسانی" />
+    </LinearLayout>
+
+    <!-- Main Value and Percent Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_widget_med_valuation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="۰ تومان"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_widget_med_pnl_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="+0.00%"
+            android:textColor="#34D399"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_widget_med_pnl_toman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سود/زیان: ۰ تومان"
+        android:textColor="#CBD5E1"
+        android:textSize="12sp" />
+
+    <!-- Breakdown Row: Gold & Silver P/L -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_widget_med_gold_pnl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="طلا: ۰ تومان"
+            android:textColor="#FDE047"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_widget_med_silver_pnl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="نقره: ۰ تومان"
+            android:textColor="#E2E8F0"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_widget_med_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--:--"
+            android:textColor="#64748B"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

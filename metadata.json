@@ -1,0 +1,6 @@
+{
+  "name": "ZarWatch AI",
+  "description": "Persian-first gold and silver portfolio monitor with real-time profit/loss tracking, dynamic P/L color engine, and live Android widgets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
